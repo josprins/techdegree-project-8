@@ -1,0 +1,182 @@
+/* --------------------------
+  Keyframes
+--------------------------- */
+@keyframes bounce {
+	0%, 20%, 60%, 100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-5px);
+		transform: translateY(-5px);
+	}
+}
+
+
+/* --------------------------
+  Main styles
+--------------------------- */
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  font-weight: 300;
+  color: #111;
+  background: #edeff0;
+  background-image: url('svgs/background.svg');
+}
+
+#container {
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+  height: 100%; /* new line */
+}
+
+.name {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p {
+  max-width: 350px;
+  margin: 35px auto 0;
+  line-height: 2em;
+  text-align: left;
+}
+
+a {
+  text-decoration: none;
+  color: #39add1;
+  font-weight: 700;
+}
+
+header {
+  padding-top: 10px;
+}
+
+header nav {
+  padding-bottom: 50px;
+  text-align: left;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+img {
+  height: 12px;
+  margin-right: 8px;
+}
+
+main {
+  padding-top: 50px;
+}
+
+main h2 {
+  font-size: 28px;
+  margin-bottom: -75px;
+}
+
+footer {
+  width: 100%;
+  margin-top: 100px;
+  padding-bottom: 30px;
+  color: #ba8058;
+}
+
+/* --------------------------
+  Hover state for navigation links
+--------------------------- */
+
+ul > li:hover .nav-icon {
+  fill: #111;
+}
+
+a:hover {
+  color: #111;
+}
+
+.nav-item:hover {
+  animation: bounce 1s ease-out backwards;
+}
+/* --------------------------
+  SVG Styles
+--------------------------- */
+
+.nav-icon {
+  fill: #39ADD1;
+}
+
+.nav-icon {
+  height: 13px;
+}
+
+.st0{fill:#BA8058;}
+.st2{fill:#F4C6A6;}
+
+.logo {
+  height: 140px;
+  width: auto;
+}
+
+.logo-text {
+  fill:#EAAA7F;
+  opacity: 0;
+}
+
+
+
+/*------DOGS CORGI*-------*/
+
+
+.corgis li {
+  display: inline-block;
+}
+
+span {
+  display: block;
+  
+}
+
+#sable use{
+    color: #B97F5B;
+}
+
+#fawn use{
+    color: #E9AA82;
+}
+
+#red use{
+    color: #834B29;
+}
+
+#stone use{
+    color: #52595F;
+}
+   
+span, footer {
+    color: #BA8058;
+}
+
+/* --------------------------
+  Media queries
+--------------------------- */
+
+@media (min-width: 425px) {
+  .logo-text {
+    opacity: 1;
+  }
+  .name {
+    display: none;
+  }
+}
