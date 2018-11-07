@@ -18,6 +18,19 @@
 	}
 }
 
+@keyframes expand {
+  0% {
+    -webkit-transform: scale(0.6);
+    transform: scale(0.6); 
+  }
+}
+
+@keyframes turn {
+  0%{
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg); 
+  }
+}
 
 /* --------------------------
   Main styles
@@ -124,6 +137,16 @@ a:hover {
 .st0{fill:#BA8058;}
 .st2{fill:#F4C6A6;}
 
+.logo:hover .logo-paw {
+  transform-origin: 50% 50%;
+  animation: expand 1s ease-out; 
+}
+
+.logo:hover .logo-text {
+  transform-origin: 45% 50%;
+  animation: turn 1s ease-out;
+}
+
 .logo {
   height: 140px;
   width: auto;
@@ -133,7 +156,6 @@ a:hover {
   fill:#EAAA7F;
   opacity: 0;
 }
-
 
 
 /*------DOGS CORGI*-------*/
